@@ -1,4 +1,5 @@
 #!/bin/bash
-NUM3=$(($NUM1+$NUM2))
-echo $NUM3
-echo "The execution completed"
+chmod 775 index.html
+chown apache index.html
+cp -Ppr index.html /var/www/html/
+echo "Application Deployed"
