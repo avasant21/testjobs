@@ -1,5 +1,3 @@
 #!/bin/bash
-chmod 775 index.html
-chown apache index.html
-cp -Ppr index.html /var/www/html/
+cat index.html > /var/www/html/index.html
 echo "Application has been deployed"
